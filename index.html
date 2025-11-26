@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantyczny Układ 9</title>
+    <style>
+        body {
+            margin: 0 auto; 
+            padding: 0;
+            width: 600px;
+            height: 800px; 
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header, main, footer {
+            border: 1px solid black; 
+            width: 600px;
+            text-align: center;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            height: 70px; 
+            padding: 15px 5px;
+        }
+        
+        header {
+            border-bottom: 1px solid black;
+        }
+        footer {
+            border-top: 1px solid black;
+        }
+        
+        main {
+            height: 300px; 
+            display: flex; 
+            flex-direction: row; 
+            border-top: none; 
+            border-bottom: none;
+        }
+
+        article {
+            width: 65%; 
+            height: 100%; 
+            display: flex;
+            flex-direction: column; 
+            border-right: 1px solid black;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside {
+            width: 35%; 
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 100%;
+            height: 30%;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .dolne-sekcje {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dolne-sekcje section {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .lewa {
+            border-right: 1px solid black;
+        }
+
+        h1, h3, h4, p {
+            margin: 5px 0;
+            font-weight: normal; 
+            font-size: 16px; 
+        }
+
+    </style>
+</head>
+<body>
+    <B><P>INF.03-09-25.06-SG</P></B>
+
+    <header>
+        <h1>Blok nagłówkowy</h1>
+    </header>
+
+    <main>
+        
+        <article>
+            <nav>
+                <h3>Blok nawigacyjny</h3>
+            </nav>
+            
+            <section class="dolne-sekcje">
+                <section class="lewa">
+                    <h3>Sekcja lewa</h3>
+                </section>
+                <section>
+                    <h3>Sekcja środkowa</h3>
+                </section>
+            </section>
+        </article>
+
+        <aside>
+            <h3>Blok boczny</h3>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Blok stopki</p>
+    </footer>
+
+</body>
+</html>
